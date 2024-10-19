@@ -298,7 +298,6 @@ module.exports = {
         if (interaction.customId === 'jqueue') {
             console.log('buttonclicked')
             if (idqueue.includes(interaction.user.id) == false){
-                interaction.channel.sendTyping()
                 inqueue.push(interaction.user.username)
                 idqueue.push(interaction.user.id)
                 addqueue1 = idqueue.map(name => `<@${name}>`)
